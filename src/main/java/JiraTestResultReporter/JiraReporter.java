@@ -278,6 +278,7 @@ public class JiraReporter extends Notifier {
 			StringEntity params = new StringEntity(jsonPayLoad);
 			params.setContentType("application/json");
 			postRequest.setEntity(params);
+			
 			try {
 				postRequest.addHeader(new BasicScheme().authenticate(
 						new UsernamePasswordCredentials(this.username,
